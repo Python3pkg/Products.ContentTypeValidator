@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0b1'
+version = '2.0b2'
 
 setup(name='Products.ContentTypeValidator',
       version=version,
@@ -15,7 +15,7 @@ setup(name='Products.ContentTypeValidator',
         ],
       keywords='',
       author='Raptus AG',
-      author_email='skaeser@raptus.com',
+      author_email='dev@raptus.com',
       url='http://raptus.com',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
