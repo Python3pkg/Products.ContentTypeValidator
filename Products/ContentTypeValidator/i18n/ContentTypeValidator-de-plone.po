@@ -17,5 +17,6 @@ msgstr ""
 "X-Poedit-Country: GERMANY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
+#. Default: "File has to be of one of the following content-types '${types}'"
 msgid "contenttype_error"
 msgstr "Die Datei muss von einem der folgenden Typen sein '${types}'"
