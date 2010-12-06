@@ -4,6 +4,18 @@ History
 2.0b3 (2010-10-24)
 ------------------
 
+* Updated German and Français translation
+  [macagua]
+
+* Added Spanish translation
+  [macagua]
+
+* Added Spanish translation
+  [macagua]
+
+* Added master template .pot file
+  [macagua]
+
 * Set zip_safe flag to False
 
 2.0b2 - (2010-10-21)
