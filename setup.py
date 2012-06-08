@@ -26,6 +26,7 @@ setup(name='Products.ContentTypeValidator',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
+      extras_require = dict(test = ['plone.app.testing',]),
       entry_points="""
       # -*- Entry points: -*-
       """,

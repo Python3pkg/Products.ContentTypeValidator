@@ -1,6 +1,6 @@
 from Products.validation.interfaces.IValidator import IValidator
 
-from Products.CMFPlone import PloneMessageFactory as _
+from Products.ContentTypeValidator import ContentTypeValidatorMessage as _
 from Products.CMFCore.utils import getToolByName
 
 from zope.interface import implements
@@ -15,7 +15,7 @@ except ImportError: # BBB Plone 3
 class ContentTypeValidator:
     """Validates a file to be of one of the given content-types
     """
-    if USE_BBB_VALIDATORS: 
+    if USE_BBB_VALIDATORS:
         __implements__ = (IValidator,)
     else:
         implements(IValidator)
@@ -25,8 +25,8 @@ class ContentTypeValidator:
         self.content_types = content_types
 
     def __call__(self, value, *args, **kw):
-        error = translate(_('contenttype_error', 
-                            default=u"File has to be of one of the following content-types '${types}'", 
+        error = translate(_('contenttype_error',
+                            default=u"File has to be of one of the following content-types '${types}'",
                             mapping={'types': ', '.join(self.content_types)}), context=kw['instance'].REQUEST)
         if value and not value == 'DELETE_FILE':
             try:
