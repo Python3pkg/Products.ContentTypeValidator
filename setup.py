@@ -6,7 +6,7 @@ version = '2.0b3'
 setup(name='Products.ContentTypeValidator',
       version=version,
       description="Provides a archetypes field validator for content types of files",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -16,7 +16,7 @@ setup(name='Products.ContentTypeValidator',
       keywords='',
       author='Raptus AG',
       author_email='dev@raptus.com',
-      url='https://svn.plone.org/svn/collective/Products.ContentTypeValidator',
+      url='https://github.com/Raptus/Products.ContentTypeValidator',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['Products'],
