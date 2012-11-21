@@ -1,13 +1,19 @@
 History
 =======
 
+2.0b4 (2012-11-20)
+------------------
+
+* Added unittests
+  [gbastien]
+
+* Updated translations
+  [gbastien]
+
 2.0b3 (2010-10-24)
 ------------------
 
 * Updated German and Français translation
-  [macagua]
-
-* Added Spanish translation
   [macagua]
 
 * Added Spanish translation

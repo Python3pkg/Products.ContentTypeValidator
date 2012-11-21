@@ -6,11 +6,12 @@ from Products.CMFCore.utils import getToolByName
 from zope.interface import implements
 from zope.i18n import translate
 
-try: # Plone 4 and higher
+try:  # Plone 4 and highwer
     import plone.app.upgrade
     USE_BBB_VALIDATORS = False
-except ImportError: # BBB Plone 3
+except ImportError:  # BBB Plone 3
     USE_BBB_VALIDATORS = True
+
 
 class ContentTypeValidator:
     """Validates a file to be of one of the given content-types
@@ -41,7 +42,7 @@ class ContentTypeValidator:
                         type = mimetypes.globFilename(value.filename)
                     try:
                         type = type.mimetypes[0]
-                    except: # wasn't able to parse mimetype
+                    except:  # wasn't able to parse mimetype
                         type = None
                 if not type in self.content_types:
                     return error

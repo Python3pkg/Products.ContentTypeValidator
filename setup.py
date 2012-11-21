@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '2.0b3'
+version = '2.0b4'
 
 setup(name='Products.ContentTypeValidator',
       version=version,
@@ -26,7 +26,7 @@ setup(name='Products.ContentTypeValidator',
           'setuptools',
           # -*- Extra requirements: -*-
       ],
-      extras_require = dict(test = ['plone.app.testing',]),
+      extras_require=dict(test=['plone.app.testing', ]),
       entry_points="""
       # -*- Entry points: -*-
       """,
