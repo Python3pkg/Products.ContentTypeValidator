@@ -17,7 +17,7 @@ class TestContentTypeValidator(unittest.TestCase):
         types = {'txt': 'text/plain', 'gif': 'image/gif', 'odt': 'application/vnd.oasis.opendocument.text'}
         #create 3 ATFile of different formats (gif, odt, text) on the site, they will be used as the new field content
         #to be validated.
-        for type, mimetype in types.iteritems():
+        for type, mimetype in types.items():
             setattr(self, '%s_MIMETYPE' % type.upper(), mimetype)
             site.invokeFactory('File', id='%s_file' % type, file=file('%s%s_file.%s' % (testfiles_path, type, type)))
             setattr(self, '%s_file' % type, getattr(site, '%s_file' % type).getFile())

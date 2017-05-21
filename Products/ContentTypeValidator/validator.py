@@ -27,7 +27,7 @@ class ContentTypeValidator:
 
     def __call__(self, value, *args, **kw):
         error = translate(_('contenttype_error',
-                            default=u"File has to be of one of the following content-types '${types}'",
+                            default="File has to be of one of the following content-types '${types}'",
                             mapping={'types': ', '.join(self.content_types)}), context=kw['instance'].REQUEST)
         if value and not value == 'DELETE_FILE':
             try:
